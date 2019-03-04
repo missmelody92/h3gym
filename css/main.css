@@ -247,7 +247,7 @@ h3 {
 	display: contents;
 }
 .container-hero {
-	padding: 200px;
+	height: 50vh;
 }
 .logo {
 	display: inline;
