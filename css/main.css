@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+
+/*Class timetable
+*/
+
+
+.days {
+	background: rgba(140,142,229,1.00)
+}
+
+.time {
+	background: rgba(140,142,229,1.00)
+}
+/**/
+/*MAIN GALLERY*/
+
+.height {
+	height: 1250px;
+}
+
+.gallery { 
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.gallery img { 
+    width: 100%; 
+    height: auto;
+    transition: 500ms;
+    margin-bottom: 10px;
+    opacity: 1;
+    page-break-inside: avoid; /* For Firefox. */
+    -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+    break-inside: avoid; /* For standard browsers like IE. :-) */
+}
+
+.gallery img:hover {
+    opacity: 0.8;
+}
+
+
+.modal-img,.model-vid{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table
+}
+.modal-body{
+  padding: 0px;
+}
+
+.modal-dialog {
+  height: 100%;
+      position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+	.gallery { 
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+	.gallery div { margin: 0; 
+        width: 200px;
+    }
+  .modal-dialog {
+        margin: 0 5vw;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .gallery { 
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    .gallery div { 
+        margin: 0; 
+        width: 200px;
+    }
+}
+
+/*NAVBAR*/
+.navbar-brand-padding {
+	padding-left: 15em;
+}
+
+.navbar-padding {
+	padding-right: 15em;
+}
+
+.bg-light-custom {
+	background-color: silver;
+	opacity: 0.5;
+}
+
+/*HEADINGS
+*/
+h1 {
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 2.5px;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	padding: 0.25em;
+}
+
+/*Carousel Caption*/
+.carousel-caption {
+	position: absolute;
+	width: 200px;
+	height: 350px;
+	right: inherit;
+	left: 30%;
+	z-index: 10;
+	padding-left: 10px;
+	color: #fff;
+	text-align: left;
+	background-color: rgba(126,140,243,0.64)
+}
+
+/*CLASS PADDING
+*/.class-padding {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+/*HERO*/
+
+.logo {
+	margin-bottom: 2em;
+}
+
+.container-hero {
+	background-image: url(../images/crossfitnologo.png);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+	background-attachment: fixed;
+	padding: 500px;
+}
+.hero-text {
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.title {
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+/*DO IT FOR YOU
+*/
+.foryou {
+	background-image: url("../images/foryou.jpeg");
+}
+/*FLEX END
+*/
+.flex-end {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*PADDING FOR CAROUSEL*/
+.cpadding {
+	padding: 5em;
+}
+/*WHAT WE OFFER*/
+.wwo-padding {
+    padding-right: 5em;
+    padding-left: 5em;
+}
+.col-xl-4
+{
+    padding-bottom: 40px;
+}
+
+.col-xl-12 {
+	-webkit-box-flex: 0;
+    padding: 2.5em;
+    text-align: center;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.btn-wwo-margin {
+	margin-left: 2em;
+}
+
+.btn-wwo {
+    margin-top: 1.5em;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.quickinfo {
+	display: none;
+}
+
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 600px) {
+
+/*HERO
+*/	
+	
+.quickinfo {
+	display: contents;
+}
+.container-hero {
+	padding: 200px;
+}
+.logo {
+	display: inline;
+}
+	h1 {
+		font-size: large;
+		color: white;
+	}
+	
+	h3 {
+		font-size: medium;
+		color: slategrey;
+	}
+
+/*What we offer
+*/
+	.title {
+		font-size: large;
+	}
+	
+	.col-xl-12 {
+		padding: 1em;
+	}
+	
+	.col-xl-4 {
+		padding-bottom: 0px;
+	}
+	
+	.wwo-padding {
+		padding-right: 0em;
+		padding-left: 0em;
+	}
+	
+	.btn-wwo {
+		display: none;
+	}
+	
+/*timetable*/
+.class-padding {
+	padding-top: 0em;
+	padding-bottom: 0em;
+}
+/*Carrsousl
+*/
+	.cpadding {
+		padding: 0em;
+	}
+	
+	.carousel-caption {
+		font-size: 10px;
+		height: 164px;
+		width: 223px;
+	}
+/*gallery
+*/
+.height {
+	height: 50%;
+}	
+	
+	.container-footer {
+		display: none;
+	}	
+	
+	.foryou {
+		display: none;
+	}	
+}
+	
